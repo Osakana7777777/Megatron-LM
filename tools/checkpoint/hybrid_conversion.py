@@ -12,7 +12,8 @@ from collections import OrderedDict
 
 import torch
 import argparse
-
+import sys
+sys.path.append("/tmp/Megatron-LM")
 
 tp_split_dim = {
     'word_embeddings.weight': 0,

@@ -117,6 +117,9 @@ def _load_checkpoint(queue, args):
     elif args.model_type == 'BERT':
         from pretrain_bert import model_provider
         margs.model_type = ModelType.encoder_or_decoder
+    elif args.model_type == 'Mamba':
+        from pretrain_mamba import model_provider
+        margs.model_type = ModelType.encoder_or_decoder
     else:
         raise Exception(f'unrecognized model type: {args.model_type}')
 

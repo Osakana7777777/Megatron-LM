@@ -1,0 +1,19 @@
+pybind11
+
+deepspeed
+wandb
+tensorboard
+
+# mpirun
+mpi4py
+
+# tokenizer
+sentencepiece
+
+# tokenize
+nltk
+
+# checkpoint convert
+transformers
+accelerate
+safetensors
